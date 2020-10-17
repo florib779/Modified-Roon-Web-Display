@@ -1,0 +1,58 @@
+#albumart {
+    left: 0;
+    bottom: 0;
+}
+#background-artistart div {
+    height: 80%;
+}
+#background-footer {
+    height: 20%;
+    background: #242424;
+}
+#infocontainer {
+    /* name of the song, artist(s), time and waveform */
+    top: 80%;
+    left: 23%;
+    bottom: .5%;
+    right: 1%;
+}
+#infoicon {
+    /* don't show the roon icon in the footer */
+    display: none;
+}
+.linecontainer span {
+    white-space: normal;
+}
+#line1container span {
+    /* name of the song */
+    font-size: 3vh;
+    color: #fff;
+}
+#line2container span {
+    /* name of the artist(s) */
+    font-size: 3vh;
+    color: #a9a9a9;
+}
+/*#line2container .front::before { content: "Aufgeführt von "; }*/
+#lyricscontainer {
+    height: 80%;
+}
+#lyricsicon {
+    right: .8%;
+    bottom: 15vh;
+}
+#progresstimecontainer {
+    color: #a9a9a9;
+    top: 75%;
+    left: 0;
+    width: 100%;
+}
+#progressbg,
+#waveformcontainer {
+    left: 5%;
+    bottom: 0.5vh;
+    width: 90%;
+    height: 3vh;
+    filter:  invert(60%) sepia() hue-rotate(150deg) saturate(180%);
+    -webkit-filter: invert(60%) sepia() hue-rotate(150deg) saturate(180%);
+}
