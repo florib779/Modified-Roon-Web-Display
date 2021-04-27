@@ -1,4 +1,6 @@
 #albumart {
+    width: 22%;
+    height: 39%;
     left: 0;
     bottom: 0;
 }
@@ -43,6 +45,21 @@
 #lyricsicon {
     right: .8%;
     bottom: 15vh;
+}
+#progresstimecontainer {
+    color: #a9a9a9;
+    top: 75%;
+    left: 0;
+    width: 100%;
+}
+#progressbg,
+#waveformcontainer {
+    left: 5%;
+    bottom: 0.5vh;
+    width: 90%;
+    height: 3vh;
+    filter:  invert(60%) sepia() hue-rotate(150deg) saturate(180%);
+    -webkit-filter: invert(60%) sepia() hue-rotate(150deg) saturate(180%);
 }
 .lyricstext {
     font-size: 2.8vw;
