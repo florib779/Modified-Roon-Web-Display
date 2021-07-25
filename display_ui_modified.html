@@ -36,7 +36,7 @@
     background-repeat: no-repeat;
     background-position: center center;
     width: 100%;
-    height: 70%;
+    height: 80%;
     position: absolute;
     top: 0;
     left: 0;
@@ -75,8 +75,8 @@
 }
 
 #background-footer {
-    background: linear-gradient(to right, rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.4));
-    height: 30%;
+    background: #242424;
+    height: 20%;
 }
 
 #background-split {
@@ -84,7 +84,7 @@
     flex-direction: column;
     background-color: transparent;
     z-index: 2;
-    width: 100%;
+    width: 0;
     height: 100%;
     top: 0;
     left: 0;
@@ -95,7 +95,7 @@
     opacity: 0;
     z-index: 3;
     width: 100%;
-    height: 70%;
+    height: 80%;
     position: fixed;
     top: 0;
     left: 0;
@@ -162,8 +162,8 @@
     width: 2.8vh;
     z-index: 3;
     position: absolute;
-    right: 11.2vw;
-    bottom: 32vh;
+    right: .8vw;
+    bottom: 15vh;
     background-repeat: no-repeat;
     background-size: contain;
     background-position: right bottom;
@@ -193,7 +193,7 @@
     margin: 0px;
     padding: 0px;
     color: white;
-    font-size: 3.3vw;
+    font-size: 2.8vw;
     font-family: "Noto Sans", "Noto Sans JP", "Noto Sans KR", "Noto Sans SC", "Noto Sans TC", sans-serif;
     line-height: 150%;
     font-weight: bold;
@@ -208,7 +208,7 @@
 .lyricstext > * {
     opacity: 0.4;
     padding: 0px;
-    margin: 3.1vw 0px 3.1vw 0px;
+    margin: 2.8vw 0px 2.8vw 0px;
     transition: transform 0.7s linear, opacity 0.7s linear;
     will-change: opacity;
     transform: scale(1); /* Edge won't smoothly transition back to original size without this */
@@ -240,8 +240,8 @@
     z-index: 3;
     width: 22%;
     height: 39%;
-    left: 10%;
-    bottom: 10%;
+    left: 0;
+    bottom: 0;
     position: fixed;
 }
 
@@ -268,21 +268,14 @@
 #infocontainer {
     position: absolute;
     z-index: 4;
-    top: 70%;
-    left: 34%;
-    bottom: 10%;
-    right: 10%;
+    top: 80%;
+    left: 23%;
+    bottom: .5%;
+    right: 1%;
 }
 
 #infoicon {
-    position: absolute;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    top: 8.3%;
-    right: 0;
-    height: 5vh;
-    width: 5vh;
+    display: none;
 }
 
 .linecontainer {
@@ -296,7 +289,7 @@
 .linecontainer span {
     font-family: "Noto Sans", "Noto Sans JP", "Noto Sans KR", "Noto Sans SC", "Noto Sans TC", sans-serif;
     font-weight: normal;
-    white-space: nowrap;
+    white-space: normal;
     overflow: hidden;
     text-overflow: ellipsis;
     user-select: none;
@@ -323,22 +316,25 @@
 
 #line1container span {
     box-sizing: border-box;
-    font-size: 5vh;
+    font-size: 3vh;
     font-weight: bold;
     padding-right: 5vh;
+    color: #fff;
 }
 
 #line2container span {
-    font-size: 3.5vh;
+    font-size: 3vh;
+    color: #a9a9a9;
 }
 
 #progresstimecontainer {
     display: flex;
     flex-direction: row;
     position: absolute;
-    top: 59%;
+    top: 75%;
     left: 0;
     width: 100%;
+    color: #a9a9a9;
 }
 
 .progresstime {
@@ -353,6 +349,16 @@
 
 #totaltime {
     text-align: right;
+}
+
+#progressbg,
+#waveformcontainer {
+    left: 5%;
+    bottom: 0.5vh;
+    width: 90%;
+    height: 3vh;
+    filter:  invert(60%) sepia() hue-rotate(150deg) saturate(180%);
+    -webkit-filter: invert(60%) sepia() hue-rotate(150deg) saturate(180%);
 }
 
 #progressbg {
@@ -496,3 +502,4 @@
     <div class="back"></div>
     <div class="front"></div>
 </div>
+ 
